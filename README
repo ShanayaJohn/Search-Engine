@@ -1,0 +1,33 @@
+Name: Shanaya John
+Course: CPS842 – Web Search and  Information Retrieval
+Vector Space Model Retrieval System
+
+Overview:
+This project implements a basic information retrieval (IR) system based on the vector space model.
+
+
+Program files: 
+
+invert.py: Builds the inverted index from the CACM document collection. Input -> CACM document collection
+search.py: Performs document retrieval using cosine similarity. Input -> CACM document collection, dictionary, posting list, common_words
+eval.py: Evaluates the IR system by calculating Mean Average Precision (MAP) and Average R-Precision using query.text and qrels.text.
+interface.py : an interactive user interface where users can enter queries and see ranked results.
+
+How to Run the Programs:
+
+Step 1: Build the inverted index (invert.py)
+    a. Make sure Python 3 and the NLTK Porter Stemmer are installed. (pip install nltk)
+    b. Place your document collection file in the same folder as the program, or note its full path.
+    c. Run the program:
+    d. Follow the instructions displayed in the terminal
+
+Step 2: Interactive interface (interface.py)
+    a. Run the program
+    b. Input collection, dictionary, posting list path via terminal
+    c. Enter the term, when prompted
+    d. Enter 'zzend'to end program
+
+Step 3: Evaluate IR System (eval.py)
+    a. Make sure query.txt and qrel are in the same folder
+    b. Run the program
+    Notes: Program may take 1-3 mins to complete execution 
